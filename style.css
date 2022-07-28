@@ -16,6 +16,13 @@
   font-weight: italic;
 }
 
+@font-face {
+  font-family: 'Roboto';
+  src: url(/font/Roboto-LightItalic.ttf) format('truetype');
+  font-weight: light;
+  font-style: italic;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   display: flex;
@@ -168,8 +175,63 @@ a{
 
 .quote {
   height: 400px;
-  padding: 50px;
+  padding: 200px;
   flex: 1 1 0;
   background-color: #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
 }
 
+.quote .text {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: light;
+  color: #1f2937;
+  flex: 1 1 0;
+}
+
+.quote .author {
+  align-self: flex-end;
+  font-weight: bold;
+  flex: 1 1 0;
+}
+
+.sign-up{
+  height: 400px;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.sign-up .box {
+  display: flex;
+  background-color: #3882f6;
+  padding: 50px;
+  border-radius: 10px;
+  justify-content: space-between;
+  width: 900px;
+}
+
+.sign-up .title {
+  flex: 1 1 0;
+}
+
+.sign-up button {
+  background-color: #3882f6;
+  color: white;
+  border-color: white;
+  border: solid;
+  border-radius: 10px;
+  border-width: 2px;
+  flex: 0 0 auto;
+  width: 110px;
+  height: auto;
+}
+
+ .sign-up .title {
+  font-weight: bold;
+ }
